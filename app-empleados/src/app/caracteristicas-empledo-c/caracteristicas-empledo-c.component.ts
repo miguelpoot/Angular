@@ -10,9 +10,7 @@ export class CaracteristicasEmpledoCComponent {
 
   @Output() caracteristicasEmpleados = new EventEmitter<string>();
 
-constructor(private miServicio:ServicioEmpleadosService){
-
-}
+constructor(private miServicio:ServicioEmpleadosService){}
 
 agregaCaracteristicas(value:string){
   this.miServicio.muestraMensaje(value);
